@@ -44,8 +44,11 @@ public class Trial {
                 if (score[i][j] <= bestScore) {
 
                     score[i][j] = bestScore;
-
-                    if (bestScore == leftScore)
+                    
+                    if(bestScore==leftScore && bestScore==upScore){
+                        pairs[i][j]=Math.min(leftPairs, upPairs);
+                    }
+                    else if (bestScore == leftScore)
                         pairs[i][j] = leftPairs;
                     else
                         pairs[i][j] = upPairs;
