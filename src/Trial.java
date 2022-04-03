@@ -41,7 +41,7 @@ public class Trial {
 
                 bestScore = Math.max(leftScore, upScore);
 
-                if (score[i][j] < bestScore) {
+                if (score[i][j] <= bestScore) {
 
                     score[i][j] = bestScore;
 
